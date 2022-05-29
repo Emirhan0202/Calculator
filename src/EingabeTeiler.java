@@ -1,20 +1,25 @@
 /**
  * Author: Emirhan Bekmez
- * Date: 28.04.2022
+ * Date: 11.05.2022
  * Version: 0.1
  **/
 
 
 public class EingabeTeiler {
-
     private final String rechenAufgabe;
-
+    
+    
+    /**
+    *Erstellen einer Konstruktor
+    */
     public EingabeTeiler(String rechenAufgabe) {
         this.rechenAufgabe = rechenAufgabe;
     }
 
+    /**
+    *Eine Methode für die Umwandlung von String auf Double
+    */
     public Rechnung parser() {
-
         String aufgabe = rechenAufgabe.trim();
         aufgabe = aufgabe.replace(" ", "");
         String operatorRegex= "";
